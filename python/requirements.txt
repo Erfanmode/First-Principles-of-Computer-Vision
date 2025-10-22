@@ -1,5 +1,5 @@
-opencv-python
 numpy
+opencv-python
 open3d
 scikit-image
 scipy
@@ -7,4 +7,5 @@ numba
 matplotlib
 trimesh
 scikit-learn
+
 
