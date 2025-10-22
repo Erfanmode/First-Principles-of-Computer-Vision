@@ -6,4 +6,5 @@ scipy
 numba
 matplotlib
 trimesh
-sklearn
+scikit-learn
+
