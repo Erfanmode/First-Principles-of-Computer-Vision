@@ -45,14 +45,12 @@ This Python project implements multiple finally photometric stereo pipelines and
 - Required Python packages (listed in `requirements.txt`):
   - `opencv-python==4.9.0.80`
   - `numpy==1.26.4`
-  - `open3d`
-  - `scikit-image==0.23.2`
   - `scipy==1.13.0`
   - `numba`
   - `matplotlib`
   - `mpl_toolkits`
   - `trimesh`
-  - `sklearn`
+  - `scikit-learn`
 
 
 ## Dataset Preparation
