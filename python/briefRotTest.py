@@ -74,8 +74,11 @@ plt.show()
 
 # Loop with SIFT detection
 # Compute features and descriptors for original image
-kp0 = sift.detect(cv_cover_G,None)
-kp0, des0 = brief.compute(cv_cover_G, kp0)
+
+bf_matcher = cv2.BFMatcher(cv2.NORM_L2, crossCheck=False)
+# kp0 = sift.detect(cv_cover_G,None)
+# kp0, des0 = brief.compute(cv_cover_G, kp0)
+kp0, des0 = sift.detectAndCompute(cv_cover_G,None)
 match_count = []
 for i in range(37):
     # Rotate the image
@@ -83,8 +86,9 @@ for i in range(37):
     rotated_image = cv2.warpAffine(cv_cover_G, rotation_matrix, (width, height))
 
     # Compute features and descriptors for the rotated image
-    kpr = sift.detect(rotated_image,None)
-    kpr, desr = brief.compute(rotated_image, kpr)
+    # kpr = sift.detect(rotated_image,None)
+    # kpr, desr = brief.compute(rotated_image, kpr)
+    kpr, desr = sift.detectAndCompute(rotated_image,None)
 
     # Match features
     matches = bf_matcher.knnMatch(des0,desr,k=2) # Two best matches
