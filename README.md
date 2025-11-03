@@ -95,7 +95,7 @@ As it can be seen despite using different feature detection algorithm, BRIEF can
 That is why algorithms such ORB (Oriented FAST and Rotated BRIEF) are more robust and preferred.
 On the other hand if you use SIFT keypoint detector and descriptor, it would be invariant to
 rotation. Because the SIFT descriptor is based on gradients histogram of local patches.<br>
-Also, each keypoint (selected patches) dominant gradient is recorded as angle of that keypoint; meaning that each decriptor is first rotated based on the keypoint angle and then compared. Because these angles are invariant to rotation, the descriptors are first aligned properly and then matched, compensating for image rotation..
+Also, each keypoint (selected patches) dominant gradient is recorded as angle of that keypoint; meaning that each descriptor is first rotated based on the keypoint angle and then compared. Because these angles are invariant to rotation, the descriptors are first aligned properly and then matched, compensating for image rotation..
 
 ### Q2.3: Homography Estimation without Normalization
 - **Output:** `results/2_3_Match_between_Groundtruth_and_Transformed.jpg`
