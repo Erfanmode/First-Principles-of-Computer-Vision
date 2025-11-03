@@ -93,6 +93,9 @@ This project implements an Augmented Reality (AR) application using planar homog
 - **Description:** Tests BRIEF feature robustness to rotation with FAST and SIFT detectors, plotting match counts vs. rotation angles.<br>
 As it can be seen despite using different feature detection algorithm, BRIEF cannot perform well after 20° rotation. The main reason is how BRIEF defines its decriptors.<br> All pixels in the local region are variant to the orientation they have. If image rotates, the descriptive pixels also rotate and reach a new position. Therefore, their value change and they are no more near the previous value they had in the original image.<br>
 That is why algorithms such ORB (Oriented FAST and Rotated BRIEF) are more robust and preferred.
+On the other hand if you use SIFT keypoint detector and descriptor, it would be invariant to
+rotation. Because the SIFT descriptor is based on gradients histogram of local patches.<br>
+Also, each keypoint (selected patches) dominant gradient is recorded as angle of that keypoint; meaning that each decriptor is first rotated based on the keypoint angle and then compared. Because these angles are invariant to rotation, the descriptors are first aligned properly and then matched, compensating for image rotation..
 
 ### Q2.3: Homography Estimation without Normalization
 - **Output:** `results/2_3_Match_between_Groundtruth_and_Transformed.jpg`
