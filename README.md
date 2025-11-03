@@ -1,7 +1,7 @@
 <center>
 <img src="./HKUST.png" alt="HKUST LOGO" width="300">
 
-**Department of Electronic and Computer Engineering**
+**Department of Electronic and Computer Engineering **
 
 **Hong Kong University of Science and Technology**
 </center>
