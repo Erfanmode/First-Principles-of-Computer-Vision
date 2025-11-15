@@ -9,7 +9,7 @@
 # Structure from Motion
 
 ### ELEC 5630 - First Principles of Cumputer Vision
-*  Assignment **2**
+*  Assignment **3**
 * Professor: **TAN, Ping**
 
 * Developed by: **Erfan RADFAR**
