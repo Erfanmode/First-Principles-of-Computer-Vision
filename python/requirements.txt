@@ -1,0 +1,7 @@
+numpy
+opencv-contrib-python
+os
+matplotlib
+imageio
+torch
+jason
