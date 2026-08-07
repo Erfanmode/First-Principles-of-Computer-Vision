@@ -1,4 +1,5 @@
 # ELEC 5630 — First Principles of Computer Vision
+<img src="./HKUST.png" alt="HKUST LOGO" width="100">
 
 <p align="center">
   <strong>Hong Kong University of Science and Technology</strong><br>
